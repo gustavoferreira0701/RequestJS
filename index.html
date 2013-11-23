@@ -1,0 +1,21 @@
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<a data-page="filter" id="btnExcluir" data-itemId="1">Excluir item</a>
+		
+		<script type="text/javascript" src="content/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="content/js/request.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function (event) {
+				// body...
+				var r = new Request($('#btnExcluir'));
+				r.Url = window.location.href;
+				r.AjaxRequest = "http://localhost:37667/RequestJS/Pagina.aspx/GetRequest";
+
+			});
+		</script>
+	</body>
+</html>
